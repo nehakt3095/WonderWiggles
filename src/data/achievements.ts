@@ -1,0 +1,65 @@
+import type { AchievementDefinition } from '../types/game';
+
+export const ACHIEVEMENTS: AchievementDefinition[] = [
+  {
+    id: 'first-spark',
+    title: 'First Starlight Spark',
+    description: 'Complete your very first puzzle on Shape Island.',
+    emoji: '✨',
+    color: '#FBBF24',
+  },
+  {
+    id: 'shape-master',
+    title: 'Shape Island Hero',
+    description: 'Finish all 10 puzzles on Shape Island.',
+    emoji: '🔷',
+    color: '#FF8A4C',
+  },
+  {
+    id: 'star-collector-15',
+    title: 'Bright Star Gatherer',
+    description: 'Earn 15 golden stars across your adventures.',
+    emoji: '🌟',
+    color: '#F59E0B',
+  },
+  {
+    id: 'memory-owl',
+    title: 'Memory Forest Owl',
+    description: 'Complete all 10 puzzles in Memory Forest.',
+    emoji: '🦉',
+    color: '#10B981',
+    isPremium: true,
+  },
+  {
+    id: 'maze-explorer',
+    title: 'Maze Path Finder',
+    description: 'Guide your buddy through all 10 mazes.',
+    emoji: '🧭',
+    color: '#0EA5E9',
+    isPremium: true,
+  },
+  {
+    id: 'factory-whiz',
+    title: 'Magic Toy Organizer',
+    description: 'Solve all 10 sorting challenges in Magic Factory.',
+    emoji: '⚙️',
+    color: '#D97706',
+    isPremium: true,
+  },
+  {
+    id: 'cloud-dreamer',
+    title: 'Cloud Kingdom Dreamer',
+    description: 'Finish all 10 sky challenges in Cloud Kingdom.',
+    emoji: '☁️',
+    color: '#8B5CF6',
+    isPremium: true,
+  },
+  {
+    id: 'planet-restorer',
+    title: 'Planet Restorer',
+    description: 'Restore WonderWiggles by completing all 50 levels!',
+    emoji: '🪐',
+    color: '#EC4899',
+    isPremium: true,
+  },
+];

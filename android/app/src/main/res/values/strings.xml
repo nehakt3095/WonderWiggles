@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">WonderWiggles</string>
+    <string name="title_activity_main">WonderWiggles</string>
+    <string name="package_name">com.wonderwiggles.littlepuzzleplanet</string>
+    <string name="custom_url_scheme">com.wonderwiggles.littlepuzzleplanet</string>
+</resources>

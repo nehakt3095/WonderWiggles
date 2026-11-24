@@ -1,0 +1,73 @@
+import type { CharacterDefinition } from '../types/game';
+
+export const CHARACTERS: CharacterDefinition[] = [
+  {
+    id: 'wobble',
+    name: 'Wobble',
+    role: 'Planet Guide',
+    description: 'Bouncy, kind-hearted explorer who loves shapes and cheering you on.',
+    free: true,
+    primaryColor: '#FF8A4C',
+    secondaryColor: '#FFD1B3',
+    accentColor: '#34D399',
+    voicePitch: 1.25,
+    voiceRate: 0.92,
+    greetingLine: "Hi friend! I'm Wobble! Let's restore the puzzle planet together!",
+  },
+  {
+    id: 'twinkle',
+    name: 'Twinkle',
+    role: 'Sky Star',
+    description: 'A gentle glowing star who floats above clouds and loves bright patterns.',
+    free: false,
+    primaryColor: '#FBBF24',
+    secondaryColor: '#FEF08A',
+    accentColor: '#60A5FA',
+    voicePitch: 1.45,
+    voiceRate: 0.95,
+    greetingLine: 'Sparkle hello! Ready to shine bright with Twinkle?',
+  },
+  {
+    id: 'bubbles',
+    name: 'Bubbles',
+    role: 'Pond Paddler',
+    description: 'A playful aqua critter who splashes around mazes and rainbow puddles.',
+    free: false,
+    primaryColor: '#38BDF8',
+    secondaryColor: '#BAE6FD',
+    accentColor: '#F472B6',
+    voicePitch: 1.32,
+    voiceRate: 0.94,
+    greetingLine: 'Bloop bloop! Bubbles is ready for puzzle splashes!',
+  },
+  {
+    id: 'coco',
+    name: 'Coco',
+    role: 'Forest Friend',
+    description: 'A cozy woodland buddy with a big fluffy tail and super memory.',
+    free: false,
+    primaryColor: '#A78BFA',
+    secondaryColor: '#DDD6FE',
+    accentColor: '#FBBF24',
+    voicePitch: 1.18,
+    voiceRate: 0.9,
+    greetingLine: 'Hello little explorer! Coco remembers every forest secret!',
+  },
+  {
+    id: 'pip',
+    name: 'Pip',
+    role: 'Tiny Winged Pal',
+    description: 'A cheerful pocket-sized flyer who zooms through Magic Factory chutes.',
+    free: false,
+    primaryColor: '#34D399',
+    secondaryColor: '#A7F3D0',
+    accentColor: '#FB7185',
+    voicePitch: 1.5,
+    voiceRate: 0.96,
+    greetingLine: 'Chirp chirp! Pip is fluttering and ready to play!',
+  },
+];
+
+export function getCharacterById(id: string): CharacterDefinition {
+  return CHARACTERS.find((c) => c.id === id) ?? CHARACTERS[0];
+}
